@@ -1,17 +1,21 @@
-h3. dmx_controller
+dmx_controller
+==============
 
 *https://github.com/jlbrogdon/dmx_controller*
 
 Example DMX light controller for the Raspberrypi (or any Linux box).  The controller communicates with DMX slave devices via an OpenDmxUsb device.
 
-h4. USB DMX interface
+USB DMX interface
+-----------------
 
 The OpenDmxUsb hardware includes an FTDI USB-serial device and RS485 driver.  The Python *pyftdi* module (*https://github.com/eblot/pyftdi*) provides the software interface to the FTDI USB driver.
 
-h4. LCD UI
+LCD UI
+------
 
 The LCD UI is provided by Lcdproc *http://lcdproc.org*, via the lcdproc client library (*https://github.com/jingleman/lcdproc.git*).
 
-h4. DMX Slave Device
+DMX Slave Device
+----------------
 
 For this example controller, I used a *Chauvet COLORstrip Mini* (*http://www.chauvetlighting.com/colorstrip-mini.html*) at DMX address 0.  The DMX channel values corresponding to the colors used in this demo are available in the COLORstrip Mini product manual: http://www.chauvetlighting.com/products/manuals/COLORstrip_-Mini_Rev03c_UM.pdf
