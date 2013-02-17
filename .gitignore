@@ -1,1 +1,6 @@
 *~
+.project
+.pydevproject
+dist
+*.egg-info
+*.pyc
